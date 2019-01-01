@@ -11,3 +11,6 @@ run:
 	$(CC) $(CFLAGS) -std=c++14 -o BigNum main.cpp && ./BigNum
 clean: 
 	rm -f core *.o *.out
+test:
+	$(CC) $(CFLAGS) -std=c++14 -o BigNum.out main.cpp
+
