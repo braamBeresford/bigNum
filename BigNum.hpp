@@ -18,7 +18,7 @@ public:
 
 };
 
-BigNum::BigNum(){
-	data= new std::vector<uint_fast64_t>;
-}
+// BigNum::BigNum(){
+// 	data= new std::vector<uint_fast64_t>;
+// }
 #endif
