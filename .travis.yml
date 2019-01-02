@@ -1,5 +1,8 @@
 language: cpp
 compiler:
   - clang
+  - gcc
 script: make
-os: osx
+os: 
+  -osx
+  -linux
