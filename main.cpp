@@ -3,11 +3,10 @@
 
 #include "src/BigNum.hpp"
 #include "src/constructors.hpp"
+
 #include "math.h"
 int main(){
-	BigNum test(45);
-
-	int car = 34431243;
+	BigNum test(45);	
 
 	return 0;
 }
