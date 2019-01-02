@@ -11,7 +11,7 @@ private:
 public:
 	BigNum();
 	BigNum(const long long&);
-	// BigNum(const std::string&);
+	BigNum(const std::string);
 
 };
 #endif
