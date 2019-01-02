@@ -4,4 +4,3 @@ compiler:
 script: make
 os: 
   -osx
-  -linux
