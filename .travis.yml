@@ -1,6 +1,10 @@
 language: cpp
+script: make
 compiler:
   - clang
-script: make
 os: 
-  -osx
+  - osx
+
+
+before_install:
+    - eval "${MATRIX_EVAL}"

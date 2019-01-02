@@ -13,7 +13,7 @@ private:
 public:
 	BigNum();
 	BigNum(const long long&):BigNum();
-	BigInt(const std::string&);
+	BigInt(const std::string&):BigNum();
 	// BigNum operator+() const;
 
 
