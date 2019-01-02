@@ -1,1 +1,3 @@
 # bigNum
+
+Run `make`
