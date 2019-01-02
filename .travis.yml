@@ -1,26 +1,9 @@
 language: cpp
 script: make
-matrix:
-  include:
-     - os: osx
-      osx_image: xcode8.3
-      compiler: clang
-      env:
-        - COMPILER='clang++'
-
-    # OS X Xcode9 Clang build
-    - os: osx
-      osx_image: xcode9.2
-      compiler: clang
-      env:
-        - COMPILER='clang++'
-
-    - os: osx
-      osx_image: xcode10.1
-      compiler: clang
-      env:
-        - COMPILER='clang++'
-
+compiler:
+  - clang
+os: 
+  - osx
 
 
 before_install:
