@@ -25,4 +25,14 @@ bool BigNum::operator>(const BigNum& num)const{
 	return false;
 }
 
+bool BigNum::operator==(const BigNum& num)const{
+	if(data->size() != num.data->size())
+		return false;
+	for(int i = 0; i < data->size(); i++){
+		if(data->at(i) != num.data->at(i))
+			return false;
+	}
+	return true;
+}
+
 #endif

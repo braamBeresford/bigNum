@@ -16,5 +16,7 @@ public:
 	BigNum operator+(const BigNum&)const;
 	bool operator<(const BigNum&)const;
 	bool operator>(const BigNum&)const;
+	bool operator==(const BigNum&)const;
+
 };
 #endif
