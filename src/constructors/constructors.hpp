@@ -11,7 +11,7 @@ std::string RemoveAllWhiteSpace(const std::string& dirty){
 	int j =0;
 	for(auto c: dirty)
 			clean += c;
-	std::cout << "No whitespace: " << clean << std::endl;
+
 	return clean;
 }
 
@@ -23,7 +23,7 @@ BigNum::BigNum(){
 };
 
 BigNum::BigNum(long long num):BigNum(){
-	std::cout << "LONG: " << num << std::endl; 
+
 	if(num<0)
 		sign = -1;
 	num = abs(num);

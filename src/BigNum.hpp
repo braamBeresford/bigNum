@@ -5,10 +5,11 @@
 #include <cstdint>
 
 class BigNum{
-private:
+
+
+public:
 	std::vector<short> * data;
 	short sign;
-public:
 	BigNum();
 	BigNum(long long);
 	BigNum(const std::string);
@@ -19,6 +20,9 @@ public:
 	bool operator>(const BigNum&)const;
 	bool operator==(const BigNum&)const;
 
+	//IOStream
+	friend std::istream&operator>>(std::istream&, BigNum&);
+	friend std::ostream&operator>>(std::ostream&, BigNum&);
 
 };
 #endif
