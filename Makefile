@@ -10,7 +10,7 @@ debug:
 run:
 	$(CC) $(CFLAGS) -std=c++14 -o BigNum.out main.cpp && ./BigNum.out
 clean: 
-	rm -f core *.o *.out
+	rm -rf core *.o *.out *.dSYM
 test:
 	$(CC) $(CFLAGS) -std=c++14 -o BigNum.out main.cpp
 
