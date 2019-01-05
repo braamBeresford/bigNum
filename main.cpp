@@ -11,14 +11,17 @@
 #include "math.h"
 int main(){
 	BigNum test = 5000;
-	BigNum test2 = 10;
-	BigNum test3;
-	test3 = test2 + test;
+	BigNum test2 = -10;
+	// BigNum hey= 0;
+	// std::cout << hey << std::endl;
+	std::cout << (test2 > 0) << std::endl;
+	// BigNum test3;
+	// test3 = test2 + test;
 
 
 
 	// std::cout << " Test: " << test << " Test2: " << test2 << " Test3 " << test3 << " BOOL " << (test3 <1) << ' ' << (test3 >-1)<<std::endl;
 	// for(auto x: *test3.data)
-		std::cout<<test3<<std::endl;
+		// std::cout<<test3<<std::endl;
 	return 0;
 }

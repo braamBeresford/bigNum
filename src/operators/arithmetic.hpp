@@ -3,7 +3,7 @@
 
 BigNum BigNum::operator+(const BigNum& num) const {
 	BigNum res;
-	if((*this)> 0 && num >0){
+	if(((*this)> 0 && num >0) || ((*this)< 0 && num <0)){
 		const BigNum biggest  = (*this)>num ? (*this) : num;
 		const BigNum smallest  = (*this)<num ? (*this) : num;
 		int temp = 0;
@@ -15,9 +15,6 @@ BigNum BigNum::operator+(const BigNum& num) const {
 				temp+= 1;
 			carry = temp >= 10;
 			res.data->push_back(temp%10);
-			for(auto x: (*res.data))
-				std::cout << x << ' ';
-			putchar('\n');
 		}
 		for(; i < biggest.data->size(); i++){
 			temp = biggest.data->at(i);
@@ -30,8 +27,10 @@ BigNum BigNum::operator+(const BigNum& num) const {
 
 		return res;
 	}
-	return res;
+	else
+		std::cout <<"HELLO ";
 
+	return res;
 }
 
 #endif

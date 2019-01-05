@@ -22,6 +22,10 @@ BigNum::BigNum(){
 
 BigNum::BigNum(const long long &numOrg):BigNum(){
 	long long num = numOrg;
+	if(num == 0){
+		data->push_back(0);
+		return;
+	}
 	if(num<0)
 		sign = -1;
 	num = abs(num);

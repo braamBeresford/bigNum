@@ -4,6 +4,11 @@
 #include "../BigNum.hpp"
 
 bool BigNum::operator<(const BigNum& num)const{
+	if((sign == 1) && (num.sign == -1))
+		return false;
+	if((sign == -1) && (num.sign == 1))
+		return true;
+
 	if(data->size() != num.data->size())
 		return data->size() < num.data->size();
 
@@ -15,6 +20,11 @@ bool BigNum::operator<(const BigNum& num)const{
 }
 
 bool BigNum::operator>(const BigNum& num)const{
+	if((sign == 1) && (num.sign == -1))
+		return true;
+	if((sign == -1) && (num.sign == 1))
+		return false;
+	
 	if(data->size() != num.data->size())
 		return data->size() > num.data->size();
 
