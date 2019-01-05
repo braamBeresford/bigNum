@@ -15,15 +15,13 @@ std::string RemoveAllWhiteSpace(const std::string& dirty){
 	return clean;
 }
 
-
-
 BigNum::BigNum(){
 	data= new std::vector<short>;
 	sign = 1;
 };
 
-BigNum::BigNum(long long num):BigNum(){
-
+BigNum::BigNum(const long long &numOrg):BigNum(){
+	long long num = numOrg;
 	if(num<0)
 		sign = -1;
 	num = abs(num);

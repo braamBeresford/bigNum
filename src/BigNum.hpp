@@ -11,7 +11,7 @@ public:
 	std::vector<short> * data;
 	short sign;
 	BigNum();
-	BigNum(long long);
+	BigNum(const long long &);
 	BigNum(const std::string);
 	void test();
 
@@ -23,6 +23,13 @@ public:
 	//IOStream
 	friend std::istream&operator>>(std::istream&, BigNum&);
 	friend std::ostream&operator>>(std::ostream&, BigNum&);
+
+	BigNum& operator=(const BigNum&);
+	BigNum& operator=(const long long &);
+	BigNum& operator=(const std::string&);
+
+
+
 
 };
 #endif
