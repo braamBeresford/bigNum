@@ -19,14 +19,16 @@ public:
 	bool operator<(const BigNum&)const;
 	bool operator>(const BigNum&)const;
 	bool operator==(const BigNum&)const;
+	bool operator>(const long long&) const;
+	bool operator<(const long long&) const;
 
 	//IOStream
 	friend std::istream&operator>>(std::istream&, BigNum&);
 	friend std::ostream&operator>>(std::ostream&, BigNum&);
 
 	BigNum& operator=(const BigNum&);
-	BigNum& operator=(const long long &);
-	BigNum& operator=(const std::string&);
+	// BigNum& operator=(const long long &);
+	// BigNum& operator=(const std::string&);
 
 
 

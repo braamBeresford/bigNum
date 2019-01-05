@@ -8,15 +8,15 @@ BigNum& BigNum::operator=(const BigNum& num){
 	return *this;
 }
 
-BigNum& BigNum::operator=(const long long & num){
-	auto temp = new BigNum(num);
-	return *temp;
-}
+// BigNum& BigNum::operator=(const long long & num){
+// 	auto temp = new BigNum(num);
+// 	return *temp;
+// }
 
 
-BigNum& BigNum::operator=(const std::string& num) {
-	auto temp = new BigNum(num);
-    return *temp;
-}
+// BigNum& BigNum::operator=(const std::string& num) {
+// 	auto temp = new BigNum(num);
+//     return *temp;
+// }
 
 #endif
