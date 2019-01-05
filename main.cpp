@@ -8,17 +8,9 @@
 
 #include "math.h"
 int main(){
-	BigNum test(324);	
-	BigNum test2(101);
-	BigNum test5(100);
-	BigNum test6(1003);
-
-	bool test3 = test==test2  ;
-	std::cout << test3 << std::endl;
-	bool test4 = test>test2;
-	std::cout << "Test" << test4 << std::endl;
-	std:: cout << (test5 ==test6) << std::endl;
-
-	// test.test();
+	BigNum test("342");
+	test.test();
+	BigNum test2("-342");
+	test2.test();
 	return 0;
 }

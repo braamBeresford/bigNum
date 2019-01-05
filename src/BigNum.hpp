@@ -1,12 +1,13 @@
 #ifndef BIG_NUM_HPP
 #define BIG_NUM_HPP
-
+ 
 #include <iostream>
 #include <cstdint>
 
 class BigNum{
 private:
 	std::vector<short> * data;
+	short sign;
 public:
 	BigNum();
 	BigNum(long long);
@@ -17,6 +18,7 @@ public:
 	bool operator<(const BigNum&)const;
 	bool operator>(const BigNum&)const;
 	bool operator==(const BigNum&)const;
+
 
 };
 #endif

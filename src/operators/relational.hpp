@@ -34,5 +34,4 @@ bool BigNum::operator==(const BigNum& num)const{
 	}
 	return true;
 }
-
 #endif
