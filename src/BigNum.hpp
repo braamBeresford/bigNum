@@ -4,14 +4,17 @@
 #include <iostream>
 #include <cstdint>
 
-// #include "constructors.hpp"
 class BigNum{
 private:
-	std::vector<uint_fast64_t> * data;
+	std::vector<short> * data;
 public:
 	BigNum();
-	BigNum(const long long&);
+	BigNum(long long);
 	BigNum(const std::string);
+	void test();
 
+	BigNum operator+(const BigNum&)const;
+	bool operator<(const BigNum&)const;
+	bool operator>(const BigNum&)const;
 };
 #endif
