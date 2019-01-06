@@ -10,8 +10,8 @@
 std::ostream& operator<<(std::ostream& out, const BigNum& num) {
     if(num.sign == -1)
     	out << '-';
-    for(int i = num.data->size()-1; i >=0 ; i--)
-    	out << num.data->at(i);
+    for(int i = num.data.size()-1; i >=0 ; i--)
+    	out << num.data.at(i);
 
     return out;
 }

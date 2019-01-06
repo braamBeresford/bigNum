@@ -8,7 +8,7 @@ class BigNum{
 
 
 public:
-	std::vector<short> * data;
+	std::vector<short> data;
 	short sign;
 	BigNum();
 	BigNum(const long long &);
